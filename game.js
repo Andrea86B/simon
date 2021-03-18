@@ -11,6 +11,7 @@ let yellowAudio = new Audio("sounds/yellow.mp3");
 let wrong = new Audio("sounds/wrong.mp3");
 
 $(document).on("keypress",function(){
+    alert("ok");
     if(gameStarted == false){
         nextSequence();
         gameStarted = true;
