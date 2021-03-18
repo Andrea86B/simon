@@ -1,0 +1,74 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  margin: auto;
+
+}
+
+@media only screen and (max-width: 500px){
+  .btn {
+    display: inline-block;
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 500px){
+  .btn {
+    display: inline-block;
+    width: 15%;
+  }
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+}
+
+.howToPlay {
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 350px;
+}
+
+.showRules {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 30px;
+  color: #FEF2BF;
+}
+
+.rules {
+  height: 200px;
+  background-color: #FEF2BF;
+  color: #011F3F;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: sans-serif;
+  display: none;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.rulesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
