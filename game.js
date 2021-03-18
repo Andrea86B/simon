@@ -17,6 +17,13 @@ $(document).on("keypress",function(){
     }
 })
 
+$(document).on("click",function(){
+    if(gameStarted == false){
+        nextSequence();
+        gameStarted = true;
+    }
+})
+
 let nextSequence = () => {
     level++;
     $('h1').text("Level " + level);

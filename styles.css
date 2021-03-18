@@ -10,24 +10,28 @@ body {
   color: #FEF2BF;
 }
 
-.container {
-  display: block;
-  width: 100%;
-  margin: auto;
-
-}
-
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 800px){
   .btn {
     display: inline-block;
-    width: 30%;
+    width: 40%;
+  }
+  .container {
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
   }
 }
 
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 800px){
   .btn {
     display: inline-block;
     width: 15%;
+  }
+  .container {
+    display: block;
+    width: 100%;
+    margin: auto;
   }
 }
 
@@ -45,7 +49,8 @@ body {
   position: fixed;
   bottom: 40px;
   left: 20px;
-  width: 350px;
+  width: 330px;
+  cursor: pointer;
 }
 
 .showRules {
@@ -78,5 +83,5 @@ body {
   position: fixed;
   bottom: 15px;
   left: 20px;
-  width: 350px;
+  width: 330px;
 }
