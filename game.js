@@ -40,7 +40,7 @@ let animatePress = (currentColor) => {
     let imgSrc = img.attr("src");
     let path = imgSrc.substr(0,imgSrc.indexOf('.')) + "Highlighted.svg";
     img.attr("src",path);
-    setTimeout(function(){img.attr("src",imgSrc)},100)
+    setTimeout(function(){img.attr("src",imgSrc)},400)
 }
 
 let playSound = (name) => {
