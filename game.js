@@ -11,7 +11,6 @@ let yellowAudio = new Audio("sounds/yellow.mp3");
 let wrong = new Audio("sounds/wrong.mp3");
 
 $(document).on("keypress",function(){
-    alert("ok");
     if(gameStarted == false){
         nextSequence();
         gameStarted = true;
@@ -39,7 +38,7 @@ $(".btn").on("click", function(){
 let animatePress = (currentColor) => {
     let img = $("#"+currentColor + " img");
     let imgSrc = img.attr("src");
-    let path = imgSrc.substr(0,imgSrc.indexOf('.')) + "Highlighted.svg";
+    let path = "/" + imgSrc.substr(0,imgSrc.indexOf('.')) + "Highlighted.svg";
     alert(path);
     img.attr("src",path);
     setTimeout(function(){img.attr("src",imgSrc)},100)
