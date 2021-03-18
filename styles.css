@@ -72,3 +72,11 @@ body {
   align-items: center;
   height: 100%;
 }
+
+.credits {
+  color: #FEF2BF;
+  position: fixed;
+  bottom: 15px;
+  left: 20px;
+  width: 350px;
+}
