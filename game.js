@@ -38,8 +38,7 @@ $(".btn").on("click", function(){
 let animatePress = (currentColor) => {
     let img = $("#"+currentColor + " img");
     let imgSrc = img.attr("src");
-    let path = "/" + imgSrc.substr(0,imgSrc.indexOf('.')) + "Highlighted.svg";
-    alert(path);
+    let path = "./" + imgSrc.substr(0,imgSrc.indexOf('.')) + "Highlighted.svg";
     img.attr("src",path);
     setTimeout(function(){img.attr("src",imgSrc)},100)
 }
